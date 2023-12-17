@@ -10,9 +10,7 @@ void display(double arr[],int size){
 void Merge_M2(double *arr,int p,int q,int r,int *b){
 	int n1 = b[q]-b[p];
 	int n2 = b[r]-b[q];
-	//double L[n1+1];
 	double *L = (double*)malloc(sizeof(double)*(n1+1));
-	//double R[n2+1];
 	double *R = (double*)malloc(sizeof(double)*(n2+1));
         double cc=arr[b[q]]-arr[b[p]+1];
 	int contL,contR;
@@ -62,7 +60,7 @@ void Merge_M2(double *arr,int p,int q,int r,int *b){
 
 
 double *sort(double *arr,int n){
-	int *b = (int*)malloc(sizeof(int)*n);              // pointerle tanımla
+	int *b = (int*)malloc(sizeof(int)*n);             
         double *L = (double*)malloc(sizeof(double)*(n));
 	//double R[n2+1];
 	double *R = (double*)malloc(sizeof(double)*(n));
