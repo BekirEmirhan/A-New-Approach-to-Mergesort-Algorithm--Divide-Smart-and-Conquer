@@ -57,7 +57,7 @@ double *Merge_M(double *arr,int p,int q,int r,int *b){
 
 
 double *sort(double *arr,int n){
-	int *b = (int*)malloc(sizeof(int)*((n/2)+1));              // pointerle tanımla
+	int *b = (int*)malloc(sizeof(int)*((n/2)+1));              
         double *L = (double*)malloc(sizeof(double)*(n));
 	//double R[n2+1];
 	double *R = (double*)malloc(sizeof(double)*(n));
@@ -133,17 +133,11 @@ double *sort(double *arr,int n){
     b[t]=n-2;
     if (arr[n-1]>=L[k-1]) {L[k]=arr[n-1]; k++; b[t]=n-1;}
     else if(arr[n-1]<=R[kk-1]){R[kk]=arr[n-1];kk++;b[t]=n-1;}
-    //L[k]=999999999.0;
-    //R[0]=999999999.0;
     Merge_Inv(L,R,arr,k,kk,b,t);
     k=t;
     if(b[t]==n-2){ 
     b[t+1]=n-1;
     k=t+1;}
-	//printf("%d\n",k);
-	//clock_t begin = clock();
-//for(int y=0;y<=t+1;y++) printf("b[%d]: %d\n",y,b[y]);
-//printf("k :%d\n",k);
     for(int l=k;l>1;l=ceil(l/2.)){
 			int t=0;
 		 	for(int i=0;i<l-1;i=i+2){
@@ -154,9 +148,6 @@ double *sort(double *arr,int n){
 		  	b[t+1]=n-1;
                   	
                 }
-	
-	//clock_t end = clock();
-	//printf("%lf\n",(double)(end-begin)/1000000);
 
  return arr;   
 }
