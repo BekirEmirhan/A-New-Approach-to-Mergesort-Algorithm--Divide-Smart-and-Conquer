@@ -39,7 +39,7 @@ void Merge_M(double *arr,int p,int q,int r,int *b){
 
 
 double *sort(double *arr,int n){
-	int *b = (int*)malloc(sizeof(int)*n);              // pointerle tanımla
+	int *b = (int*)malloc(sizeof(int)*n);              
         double *L = (double*)malloc(sizeof(double)*(n));
 	//double R[n2+1];
 	double *R = (double*)malloc(sizeof(double)*(n));
@@ -56,22 +56,16 @@ double *sort(double *arr,int n){
     }
     b[t+1]=n-1;
     k=t+1;
-    //for(int y=0;y<=t+1;y++) printf("b[%d]: %d\n",y,b[y]);
     for(int l=k;l>1;l=ceil(l/2.)){
 			int t=0;
-				//printf("%d\n",l);
+
 		 	for(int i=0;i<l-1;i=i+2){
 				//printf("%d %d %d\n",i,i+1,i+2);
 		  		Merge_M(arr,i,i+1,i+2,b);
 		  		t++;
 		  		b[t]=b[i+2];
 		 	}
-
-			//for(int y=0;y<n;y++) printf("arr %lf\n",arr[y]);
 		  	b[t+1]=n-1;
-                  	//for(int y=0;y<t+1;y++){
-				//printf("b %d\n",b[y]);
-			//}
                 }
 
  return arr;   
