@@ -1,6 +1,6 @@
 <h1>A-New-Approach-to-Mergesort-Algorithm--Divide-Smart-and-Conquer</h1>
 
-<b>Contents</b>
+<b>Contents
 <br></br>
 1- File structure of Repository
 <br></br>
@@ -8,7 +8,7 @@
 <br></br>
 3- Testing and Getting Results from Sorting Algorithms
 <br></br>
-<br></br>
+<br></br></b>
 <h1><b>1- File structure of Repository</b></h1>
 
 We design the repository as a 3 section to make everyting clearly. Sorting algorithms that used in paper , data generator scripts and sample mini data for testing.
