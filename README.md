@@ -1,4 +1,4 @@
-A-New-Approach-to-Mergesort-Algorithm--Divide-Smart-and-Conquer
+<h1>A-New-Approach-to-Mergesort-Algorithm--Divide-Smart-and-Conquer</h1>
 
 <b>Contents</b>
 <br></br>
