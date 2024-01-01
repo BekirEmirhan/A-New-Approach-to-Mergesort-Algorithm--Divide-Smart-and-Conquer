@@ -61,3 +61,6 @@ Secondly, try with 1 million gaussian input with writing : &nbsp;&nbsp;&nbsp;./a
 <br></br>
 Output of the code is the time of the execution of the algorithm in terms of second
 
+<h3><b>Citation:</b></h3>
+Please give an refernces for the using the dataset to authors of the dataset:
+Sahin Emrah AMRAHOV,Yilmaz AR,Bulent TUGRUL,Bekir Emirhan AKAY
